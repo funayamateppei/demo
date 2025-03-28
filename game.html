@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game</title>
+    <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap'>
+  </head>
+  <body>
+    
+
+    <!-- 背景画像 -->
+    <img class="background-image" src="IMG①.jpg" alt="背景の画像" />
+
+    <div class="quiz-box">
+      <!-- 問題 -->
+      <div class="question-box">
+        <br>
+        <h2 class="question"></h2>
+      </div>
+
+      <!-- 選択肢 -->
+      <img id="left" />
+      <img id="right" />
+    </div>
+
+    <p id="success" class="success" style="display: none" >正解！！</p>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./game.js"></script>
+</html>

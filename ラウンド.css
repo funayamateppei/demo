@@ -1,0 +1,53 @@
+
+
+body{
+    background-color:rgba(236, 236, 24, 0.644) ;
+    font-family: "Kosugi Maru";
+    }
+
+.aaa{  
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    
+    }
+
+.aaa button{
+    font-family: "Kosugi Maru";
+    background-color: rgb(245, 188, 32);
+    font-size: 45px;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    padding: 10px 20px; /* 上下10px、左右20pxの余白を追加 */
+    }
+
+
+      
+.ttt{ 
+    margin-left:auto;
+    margin-right: auto;
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+.ttt button{ 
+    font-family: "Kosugi Maru";
+    background-color: rgb(32, 233, 32);
+    font-size: 45px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+    

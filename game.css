@@ -1,0 +1,89 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(88, 54, 9);
+  }
+
+
+  
+  body {
+    margin: 0;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100dvw;
+    max-height: 100dvh;
+    transform: translate(-50%, -50%);
+  }
+  
+  .quiz-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .question-box {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .question {
+    font-size: 30px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    text-wrap: wrap;
+  }
+  
+  #left {
+    position: absolute;
+    top: 34.8%;
+    left: 7.8%;
+    width: 32%;
+    object-fit: cover;
+  }
+  
+  #right {
+    position: absolute;
+    top: 34.8%;
+    right: 6.4%;
+    width: 32%;
+    object-fit: cover;
+  }
+
+  .success, .incorrect { /* success と incorrect に共通のスタイルを適用 */
+    font-family:Kosugi Maru ;
+    background-color: white;
+    
+    position: absolute;
+    font-weight: 600;
+    width: 100%;
+    height: 10% 10%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 53px;
+    text-align: center;
+    z-index: 3;
+}
+
+.success {
+    color: red;
+}
+
+.incorrect {
+    color: blue;
+}
+

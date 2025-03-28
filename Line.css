@@ -1,0 +1,34 @@
+.mmm{
+    background-color: rgb(126, 241, 50);
+    font-size: 25px;
+    border-radius: 100%;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+}
+
+.kikiki{
+    font-size: 2rem;
+    text-align:center ;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.979);
+}
+
+body{background-color: rgb(181, 247, 168);}
+
+.zzz{position: relative}
+
+.zzz button{
+    background-color: aquamarine;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    position: relative
+}
+
+#aaa{top: 10%; }
+#bbb{top: 10%; }
+#ccc{top: 30%; }
+#ddd{top: 10%; }
+#eee{top: 10%; }

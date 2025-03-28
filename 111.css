@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background-color: rgba(241, 243, 115, 0.925);
+    font-family: Kosugi Maru;
+}
+
+.dedede{
+    width: 50%;
+}
+
+.bababa{
+    background-color: yellow;
+    font-size: 40px;
+    border-radius: 100%;
+    margin-right: 100%;
+}
+
+.内容{
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.電源{
+    font-size: 30px;
+    margin-bottom: 60px;
+   
+}
+
+.音量{
+    font-size: 30px;
+    margin-bottom: 60px;
+
+}
+
+.ホーム画面{
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.game{
+    font-family: Kosugi Maru;
+    font-size: 50px;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
