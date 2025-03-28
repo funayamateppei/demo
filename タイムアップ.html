@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap'>
+
+    <style>
+        body{
+            text-align: center;
+            font-family: Kosugi Maru;
+            color: black;
+            background-color: rgb(247, 225, 130);
+            margin-top: 50%;
+        }
+
+        .aaa{
+            display: flex;
+            flex-direction: column;
+            margin-top:30%;
+            margin-left: 10%;
+            margin-right: 10%;
+           
+        }
+
+        .aaa button{
+            background-color: orange;
+            font-family: Kosugi Maru;
+            font-size: 40px;
+            padding: 10px;
+            border-radius: 15px;
+            color: black;
+            margin-bottom: 10px;
+            border-color: black;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 50px;">タイムアップ！</h1>
+    
+    <br>
+    <p style="font-size: 40px;">打てた単語数<br> <span style="font-size: 50px;" id="correct-count"></span></p>
+    <div class="aaa">
+    <button  onclick="location.href='タイピング.html'">もう一度プレイする</button>
+    <button  onclick="location.href='Tstart.html'">レベルを変える</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        // URLからクエリパラメータを取得する関数
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Enterキーを押した回数を表示
+        const count = getQueryParam('count');
+        if (count) {
+            document.getElementById('correct-count').textContent = count;
+        } else {
+            document.getElementById('correct-count').textContent = "0";
+        }
+    </script>
+
+
+
+    
+</body>
+</html>

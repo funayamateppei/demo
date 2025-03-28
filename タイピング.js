@@ -3,17 +3,19 @@ $(document).ready(function() {
         'おはよう', 'あついね。','こんにちは', 
         'うふふ','こんばんわ','そうよね','ごめんね',
         'ありがとう', 'すみません', 'やっほー',
-        'いいね！','わかりました。', 'そうなの？'];
-    let 単語 = '';/**/ 
+        'いいね！','わかりました。', 'そうなの？'
+    ];
+    let 単語 = '';
     let currentWordIndex = 0;
-    let 残り時間 = 60;
+    let 残り時間 = 10;
     let timerInterval;
+    let typedWordCount = 0; // Enterキーを押して進めた単語数をカウントする変数
 
     function displayWord() {
-        単語 = words[currentWordIndex];/*[単語」にcurrentWordIndex番目のwordsを代入*/ 
-        $("#type-display").html(単語);/*「単語」をtype-displayに表示 */
-        $("#type-input").val('');/*入力欄クリア */
-        $("#type-input").focus();/*htmlのautofoucsと同じ動き*/
+        単語 = words[currentWordIndex];
+        $("#type-display").html(単語);
+        $("#type-input").val('');
+        $("#type-input").focus();
     }
 
     function startTimer() {
@@ -22,12 +24,12 @@ $(document).ready(function() {
             $("#timer").text(残り時間);
             if (残り時間 <= 0) {
                 clearInterval(timerInterval);
-                alert('タイムアップ！');
+                window.location.href = 'タイムアップ.html?count=' + typedWordCount; // 遷移先のページにEnterキーを押した回数を渡す
                 $("#type-input").prop("disabled", true);
             }
         }, 1000);
     }
-
+    
     displayWord();
     startTimer();
 
@@ -56,6 +58,7 @@ $(document).ready(function() {
     $("#type-input").on('keydown', function(event) {
         if (event.key === 'Enter') {
             if ($(this).val() === 単語) {
+                typedWordCount++; // Enterキーを押した回数をインクリメント
                 currentWordIndex++;
                 if (currentWordIndex < words.length) {
                     displayWord();

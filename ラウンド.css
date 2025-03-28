@@ -8,7 +8,7 @@ body{
 .aaa{  
     margin-left:auto;
     margin-right: auto;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     margin-top: 20%;
@@ -23,6 +23,7 @@ body{
     margin-bottom: 10%;
     border-radius: 10px;
     padding: 10px 20px; /* 上下10px、左右20pxの余白を追加 */
+    border-color: rgb(218, 132, 3);
     }
 
 
@@ -31,7 +32,7 @@ body{
     margin-left:auto;
     margin-right: auto;
     position: relative;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     
@@ -40,11 +41,18 @@ body{
 .ttt button{ 
     font-family: "Kosugi Maru";
     background-color: rgb(32, 233, 32);
-    font-size: 45px;
+    font-size: 40px;
     padding: 10px 20px;
     border-radius: 10px;
+    border-color:rgb(24, 165, 5);
 }
 
+.sss{
+    font-size: 30px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
