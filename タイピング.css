@@ -10,8 +10,8 @@ body{ background-color: rgb(246, 248, 101);}
 }
 
 .type-display{
-    font-size: 60px;
-    padding-top:  20%;
+    font-size: 50px;
+    padding-top:  0%;
 }
 .type-input{
     font-size: 45px;
@@ -20,10 +20,11 @@ body{ background-color: rgb(246, 248, 101);}
 }
 
 .timer{
-    font-size: 4rem;
+    font-size: 55px;
+    padding-top: 0%;
     }
-.time{font-size: 2rem;
-    padding-top: 20%;
+.time{font-size: 30px;
+    padding-top: 70%;
 }
      
      

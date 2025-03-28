@@ -7,7 +7,7 @@ $(document).ready(function() {
     ];
     let 単語 = '';
     let currentWordIndex = 0;
-    let 残り時間 = 10;
+    let 残り時間 = 60;
     let timerInterval;
     let typedWordCount = 0; // Enterキーを押して進めた単語数をカウントする変数
 
